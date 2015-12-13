@@ -14,4 +14,4 @@ This plugin enables you to use Mautic with Elgg. It will add the Mautic tracking
 
 - Go to Admin settings and filll in the URL of your Mautic site (e.g. http://mautic.yourwebsite.com)
 
-- That's it, nautic will start collecting
+- That's it, Mautic will start collecting
