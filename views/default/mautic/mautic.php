@@ -2,6 +2,9 @@
 //Mautic programmatic marketing
 
 $title =  $vars["title"];
+if (empty($vars['title'])) {
+        $title = elgg_get_config('sitename');
+} 
 $page_url = 'http://' . $_SERVER[HTTP_HOST] . $_SERVER['REQUEST_URI'];
 $page_title = urlencode($title);
 $url = elgg_get_plugin_setting("mautic_url","mautic");
