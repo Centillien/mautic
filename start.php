@@ -10,7 +10,7 @@
 
 	function mautic_init() {
 
-		elgg_extend_view('page/elements/head','mautic/mautic');
+		elgg_extend_view('page/elements/foot','mautic/mautic');
 		
 	}
 
