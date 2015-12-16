@@ -13,11 +13,10 @@ if(elgg_is_logged_in()) {
         $muser = elgg_get_logged_in_user_entity();
         $mguid = $muser->guid;
         $email = urlencode($muser->email);
-        $name = explode(" ", $muser->name);
+        $name = explode(" ", $muser->name, 2);
         $firstname = $name[0];
 	$firstname = rawurlencode($firstname);
         $lastname = $name[1];
-        $lastname .= " " . ($name[2]); //For users who use their  middlenames like "Walter Bruce Willis"
 	$lastname = rawurlencode($lastname);
 	$location = explode(",", $muser->location);
         $location = $location[0];
