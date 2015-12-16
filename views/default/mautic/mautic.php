@@ -18,6 +18,9 @@ if(elgg_is_logged_in()) {
 	$firstname = rawurlencode($firstname);
         $lastname = $name[1];
 	$lastname = rawurlencode($lastname);
+        if ($lastname == " " || $lastname = "%20") {
+                $lastname = "";
+        }
 	$location = explode(",", $muser->location);
         $location = $location[0];
 	$location = rawurlencode($location);
