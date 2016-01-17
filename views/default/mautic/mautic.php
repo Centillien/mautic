@@ -30,7 +30,7 @@ if(elgg_is_logged_in()) {
 	$src= "$url/mtracking.gif?page_url=$page_url&page_title=$page_title";
 }
 
-echo '<img src="'. $src .'" style="display: none;" />';
+echo '<img src="'. $src .'" alt="" style="display: none;" />';
 //End Mautic extention
 
 ?>
