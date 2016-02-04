@@ -1,6 +1,7 @@
 <?php
 //Mautic programmatic marketing
 
+
 if(!$page_title =  elgg_echo(elgg_get_context())) {
 	$page_title = $vars['config']->sitename;
 }
@@ -27,6 +28,10 @@ if($muser = elgg_get_logged_in_user_entity()) {
 	))));
 
 } else {
+
+	if (elgg_get_plugin_setting("mautic_dont_track_anonymos","mautic") == "yes") {
+		return;
+	}
 
 	$d = urlencode(base64_encode(serialize(array(
     	'page_url'   => $page_url,
