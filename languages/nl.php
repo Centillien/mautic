@@ -5,9 +5,10 @@
  * @package Mautic
  */
 
-$dutch = array(
+return array(
 	//Mainpage settings
-	'mautic_url:title' => 'Geef de URL van je mautic installation in (zonder slash aan het einde)',
+	'mautic:settings:url' => 'Geef de URL van je mautic installation in (zonder slash aan het einde)',
+	'mautic:settings:tracking' => 'Heeft anonieme bezoekers niet bijhouden'
 );
 
-add_translation("nl", $dutch);
+	

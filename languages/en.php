@@ -5,9 +5,8 @@
  * @package Mautic
  */
 
-$english = array(
+return array(
 	//Mainpage settings
-	'mautic_url:title' => 'Provide the URL of your mautic installation (without trailing slash)',
+	'mautic:settings:url' => 'Provide the URL of your mautic installation (without trailing slash)',
+	'mautic:settings:tracking' => 'Do not track anonymos visits'
 );
-
-add_translation("en", $english);
