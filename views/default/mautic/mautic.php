@@ -26,8 +26,6 @@ if($muser = elgg_get_logged_in_user_entity()) {
     	'guid' => $muser->guid
 	))));
 
-	echo '<img src="'.$url.'/mtracking.gif?d=' . $d . '" alt="" style="display: none;" />';
-
 } else {
 
 	$d = urlencode(base64_encode(serialize(array(
