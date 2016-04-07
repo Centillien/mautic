@@ -8,7 +8,5 @@
 return array(
 	//Mainpage settings
 	'mautic:settings:url' => 'Geef de URL van je mautic installation in (zonder slash aan het einde)',
-	'mautic:settings:tracking' => 'Heeft anonieme bezoekers niet bijhouden'
+	'mautic:settings:tracking' => 'Anonieme bezoekers niet bijhouden'
 );
-
-	
